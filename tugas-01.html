@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 01: Restyle Katalog Produk</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="output.css">
+  <link rel="icon" type="img" href="Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+  <script>
+    alert("Haloo Selamat Datang Lagi Pengguna");
+  </script>
+  <!--
+    🎯 TUGAS 01: RESTYLE KATALOG PRODUK
+    ====================================
+    Instruksi:
+    1. Ambil HTML dari Modul 01 (tugas-01.html)
+    2. Style dengan Tailwind CSS menggunakan komponen dari main.css
+    3. Pastikan responsive di mobile, tablet, desktop
+    4. Gunakan CSS Variables untuk konsistensi tema
+
+    Setiap save, browser akan auto-refresh (Vite HMR)
+  -->
+
+  <video class=" fixed top-0 left-0 w-full h-full object-cover -z-10 brightness-50" autoplay muted loop class="latargerak" src="Rumput.mp4" ></video>
+    
+
+<header class=" text-white text-4xl font-bold drop-shadow-[0_0_12px_rgba(255,255,255,0.9)] fixed top-4 left-0 right-0 z-50 mx-auto max-w-6xl w-[90%] shadow-cyan-500/50 sticky top-0 z-50 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-md px-6 py-5 flex items-center justify-between nav rounded-3xl">
+  <div class="flex items-center gap-3">
+    <img class="w-12 h-auto drop-shadow-md" src="Logo.png" alt="Logo Hiu">
+    <span class="font-bold text-lg tracking-wider text-white">STYLISH OUTFIT</span>
+  </div>
+  <nav class="items-center mr-auto ml-6 text-white text-4xl font-bold drop-shadow-[0_0_12px_rgba(255,255,255,0.9)] Top">
+    <ul class="flex items-center gap-6 text-sm font-medium text-white">
+      <li><a class="hover:text-cyan-400 transition-colors mnu" href="#"><i class="fa-solid fa-bars"></i></a></li>
+      <li><a href="#home" class="hover:text-cyan-400 transition-colors">HOME</a></li>
+      <li><a href="#Produk" class="hover:text-cyan-400 transition-colors">PRODUK</a></li>
+      <li><a class="hover:text-cyan-400 transition-colors kj" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+  </nav>
+  <div class="flex items-center gap-4">
+    <div class="relative sm:block">
+      <input list="suggest" class="bg-white/10 border border-white/20 rounded-full px-4 py-2.5 text-sm placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-white/40 backdrop-blur-sm" type="search" placeholder="Cari outfit...">
+      <datalist id="suggest">
+        <option value="Baju Terbaru"></option>
+        <option value="Hodie Terbaru"></option>
+        <option value="Jaket Terbaru"></option>
+        <option value="Style Terbaru"></option>
+      </datalist>
+    </div>
+  </div>
+</header>
+
+  <main class="max-w-7xl mx-auto px-4 pt-28 md:pt-32 py-12" id="home">
+    <!-- TODO: Tambahkan katalog produk di sini -->
+    <div class="judulawal">
+    <h1 class="judul">Wellcome to the stylish Outfit </h1>
+    <h2 class="judul1">Temukan Outfit Terkeren Mu!!</h2>
+    <p>
+        Web ini tempat pembelian pakaian dan pencarian baju yang menarik dan unik buat kalian
+        <br> lagi butuh style baju kekinian dan modern. Kami juga menyediakan layanan pembelian pakaian dan outfit terkini.</br>
+        <br> web ini membantu anda mencari refrensi outfit serta pembelian pakaian unik yang bisa dibeli secara online </br>
+        Jika anda tertarik dengan style sekarang silahkan tekan tombol yang ada dibawah ini 
+    </p>
+    <p>
+      Jangan lewatkan informasi terkini dari kami!
+   </p>
+  </div>
+
+  <section class="produk" id="Produk">
+        <h2 class="judulproduk">Produk Terbaru</h2>
+        <div class="baju1">
+            <div class="tabel">
+            <img class="bajufoto1" src="Baju.png" width="400px" height="auto" alt="Hodie bulu">
+            <h2 class="judulbaju1">Hodiee bulu y2k</h2>
+            <p>Hodie ini berasal dari us dan dikembangkan kembali di indonesia dengan bulu ayam</p>
+            <p>Rp2.000.000</p>
+            <button onclick="confirm('Terimakasih Sudah Mengklik Tombol ini, Silahkan Lanjutkan Belanja')" class="bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium px-5 py-2.5 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:scale-105 active:scale-95">
+              Klik
+            </button>
+            </div>
+
+            <div class="tabel1">
+              <img class="bajufoto2" src="Baju2.png" alt="hodie hijo" width="400px" height="auto">
+              <h2 class="judulbaju2">Hodie hujau astetik</h2>
+              <p>hoodie hijau astetik ini berasal dari brazil dan dikembangkan lalu dimodifikasi den memiliki bahan dengan kualaitas yang tarbaik </p>
+              <p>Rp 4.000.000</p>
+            </div>
+
+            <div class="tabel2">
+              <img class="bajufoto3" src="Baju3.png" alt="hodie emo" width="400px" height="auto">
+              <h2>Hodie emo y2k </h2>
+              <p>Hodiee emo ini terbuat dari bahan yang terdapat dari german dengan pilihan dan rajutan yang berkualitas</p>
+              <p>Rp 300.000</p>
+              
+            </div>
+            <div class="tabel3">
+              <img class="bajufoto4" src="Baju4.png" alt="Sweter y2k" width="400px" height="auto">
+              <h2>Sweter Y2k</h2>
+              <p>Sweter ini menggunkan bahan yang terbuat dari benang pilihan yang premium, dengan tema y2k yang terlihat unik dan berkulaitas</p>
+              <p>Rp 500.000</p>
+              
+            </div>
+        
+        
+         <h2 class="judulter"> Tunggu Update Berikutnya!</h2>
+
+    </section>
+  
+  </main>
+
+  <footer class="bg-gray-900 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">&copy; 2026 - Tugas Modul - HUB: VIA TIKTOK : @RafTiktok - VIA IG: @AskermOI - VIA WHATSAP: (999-999-999)</p>
+
+    </div>
+  </footer>
+</body>
+</html>
